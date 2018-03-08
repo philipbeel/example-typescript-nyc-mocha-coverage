@@ -7,13 +7,11 @@ Full documentation about this project can be found on this blog post:
 [javascript coverage with gulp karma istanbul](http://theodin.co.uk//)
 
 ##### Installation
-Check out the project and `npm install`. If you haven't already, install gulp globally:
-
-    npm install gulp -g
+Check out the project and `npm install`.
 
 ##### How to use:
 run:
 
-    gulp coverage
+    npm run coverage
 
-Your browser should open with the Istanbul coverage report.
+The coverage report should be available in `/coverage`.
