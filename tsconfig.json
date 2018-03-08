@@ -12,7 +12,9 @@
   ],
   "types": [
     "jasmine",
-    "node"
+    "node",
+    "mocha",
+    "chai"         
   ],
   "include": [
     "calculator/ts/**/*.ts"
