@@ -1,0 +1,6 @@
+node_modules
+build
+coverage
+dist.zip
+ts_build
+.nyc_output
