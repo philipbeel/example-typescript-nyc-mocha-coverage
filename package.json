@@ -1,0 +1,64 @@
+{
+  "name": "example-typescript-nyc-mocha-coverage",
+  "version": "1.0.0",
+  "description": "Example typescript project with unit and code coverage support using NYC, Typescript, and Mocha.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipbeel/example-typescript-nyc-mocha-coverage.git"
+  },
+  "keywords": [
+    "gulp",
+    "typescript",
+    "mocha",
+    "nyc"
+  ],
+  "author": "YouView CloudServices <team.cloudservices@youview.com> (https://www.youview.com)",
+  "license": "ISC",
+  "homepage": "https://github.com/philipbeel/example-typescript-nyc-mocha-coverage#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^2.2.41",
+    "babel-eslint": "7.1.1",
+    "chai": "3.5.0",
+    "eslint": "3.16.1",
+    "istanbul": "0.4.5",
+    "jasmine-core": "^2.6.4",
+    "jsdom": "^11.1.0",
+    "mocha": "3.2.0",
+    "nyc": "^11.0.3",
+    "require-dir": "^0.3.2",
+    "requirejs": "2.3.3",
+    "source-map-support": "^0.4.15",
+    "ts-node": "^3.1.0",
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.4"
+  },
+  "nyc": {
+    "include": [
+      "calculator/ts/src/*.ts"
+    ],
+    "exclude": [
+      "calculator/ts/**/*.test.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "engine": {
+    "node": "~6.9.2"
+  }
+}

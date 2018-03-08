@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowJs": true,
+    "target": "es5",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "lib": ["dom", "es2015.promise", "es2015"]
+  },
+  "typeRoots": [
+    "./node_modules/@types"
+  ],
+  "types": [
+    "jasmine",
+    "node"
+  ],
+  "include": [
+    "calculator/ts/**/*.ts"
+  ],
+  "exclude": [
+    "coverage",
+    "node_modules",
+    "!node_modules/@types"
+  ]
+}
