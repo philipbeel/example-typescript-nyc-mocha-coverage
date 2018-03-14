@@ -4,6 +4,7 @@
   "description": "Example typescript project with unit and code coverage support using NYC, Typescript, and Mocha.",
   "main": "index.js",
   "scripts": {
+    "lint": "tslint --project tsconfig.json --format stylish",
     "test": "mocha",
     "coverage": "nyc mocha"
   },
@@ -30,7 +31,7 @@
     "nyc": "^11.0.3",
     "source-map-support": "^0.4.15",
     "ts-node": "^3.1.0",
-    "tslint": "^5.4.3",
+    "tslint": "^5.9.1",
     "typescript": "^2.3.4"
   },
   "nyc": {
