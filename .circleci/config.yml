@@ -27,8 +27,8 @@ jobs:
           - v1-dependencies-
 
       - run: 
-        name: Install dependencies
-        command: npm install
+          name: Install dependencies
+          command: npm install
 
       - save_cache:
           paths:
@@ -36,12 +36,12 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: 
-        name: Running TS linter
-        command: npm run lint
+          name: Running TS linter
+          command: npm run lint
 
       - run: 
-        name: Running tests
-        command: npm run test
+          name: Running tests
+          command: npm run test
 
       - run: 
         name: Running Coverage report
