@@ -44,5 +44,5 @@ jobs:
           command: npm run test
 
       - run: 
-        name: Running Coverage report
-        command: npm run coverage
+          name: Running Coverage report
+          command: npm run coverage
