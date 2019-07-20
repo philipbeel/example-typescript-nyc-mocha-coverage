@@ -5,13 +5,16 @@
 Example typescript project with unit and code coverage support using NYC, Typescript, and Mocha.
 
 ##### Documentation
+
 Full documentation about this project can be found on this blog post:
-[Typescript coverage with Mocha & NYC](https://theodin.co.uk/2018/03/09/typescript-coverage-mocha-nyc/)
+[Typescript coverage with Mocha & NYC](https://theodin.co.uk/typescript-coverage-mocha-nyc/)
 
 ##### Installation
+
 Check out the project and `npm install`.
 
 ##### How to use:
+
 run:
 
     npm run coverage
