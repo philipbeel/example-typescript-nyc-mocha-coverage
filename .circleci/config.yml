@@ -8,9 +8,11 @@ jobs:
         steps:
         - checkout
         - run:
+            name: "Build"
+            command: npm install
+        - run:
             name: "Test the image..."
-            command: |
-                npm run coverage
+            command: npm run coverage
 workflows:
   my-job-workflow:
     jobs:
