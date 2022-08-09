@@ -18,4 +18,6 @@ jobs:
 workflows:
   my-job-workflow:
     jobs:
-      - my-job
+      - my-job:
+          context:
+            - aws-context
