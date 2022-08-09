@@ -4,7 +4,7 @@ orbs:
 jobs:
   my-job:
         docker:
-          - image: circleci/node:16.15.0
+          - image: circleci/node:latest
         steps:
         - checkout
         - run:
