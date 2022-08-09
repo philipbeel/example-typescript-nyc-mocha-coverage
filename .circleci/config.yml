@@ -3,13 +3,9 @@ orbs:
     aws-cli: circleci/aws-cli@0.1.16
 jobs:
   my-job:
-        executor: aws-cli/default
+        docker:
+          - image: circleci/node:16.15.0
         steps:
-        - aws-cli/setup:
-            profile-name: default
-        - setup_remote_docker:
-            version: "20.10.7"
-            docker_layer_caching: true
         - checkout
         - run:
             name: "Test the image..."
@@ -18,6 +14,4 @@ jobs:
 workflows:
   my-job-workflow:
     jobs:
-      - my-job:
-          context:
-            - aws-context
+      - my-job
